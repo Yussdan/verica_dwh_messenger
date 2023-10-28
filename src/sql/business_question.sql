@@ -17,6 +17,7 @@ user_group_log AS (
 	WHERE sah.event='add'
 	GROUP BY luga.hk_group_id
 	ORDER BY registration_dt
+	LIMIT 10
 )
 SELECT 
 	DISTINCT 
