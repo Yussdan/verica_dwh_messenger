@@ -3,7 +3,7 @@ SELECT
 	luga.hk_l_user_group_activity,
 	gl.user_id_from,
 	gl.event,
-	gl.datetime AS event_dt,
+	gl.dt AS event_dt,
 	now() AS load_dt,
 	's3' AS load_src
 from STV2023100614__STAGING.group_log AS gl
